@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Vite-Sass Template</title>
+      <link rel="icon" type="image/svg+xml" href="img/vite.svg" />
+      <link rel="stylesheet" href="style.scss" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+         rel="stylesheet"
+      />
+      <script defer type="module" src="main.js"></script>
+   </head>
+
+   <body>
+      <div id="app">
+         <div class="container">
+            <div class="card">
+               <div class="card__content">
+                  <div class="card__description">
+                     <h2>Get <span>insights</span> that help your business grow.</h2>
+                     <p>
+                        Discover the benefits of data analytics and make better decision regarding revenue, customer
+                        experience, and overall efficiency.
+                     </p>
+                  </div>
+                  <div class="card__stats">
+                     <div class="card__stat card__stat--companies">
+                        <span>10k+</span>
+                        <span>companies</span>
+                     </div>
+                     <div class="card__stat card__stat--templates">
+                        <span>314</span>
+                        <span>templates</span>
+                     </div>
+                     <div class="card__stat card__stat--queries">
+                        <span>12M+</span>
+                        <span>queries</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="card__image-container">
+                  <picture>
+                     <source srcset="/img/image-header-desktop.jpg" media="(min-width: 905px)" />
+                     <source srcset="/img/image-header-mobile.jpg" media="(max-width: 904px)" />
+                     <img src="/img/image-header-desktop.jpg" alt="Splash Image" />
+                  </picture>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

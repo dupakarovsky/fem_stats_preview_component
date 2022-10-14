@@ -1,0 +1,27 @@
+:root {
+   /* LIGHT MODE */
+   --brand-light: 40 100% 50%;
+   --text1-light: 210 2% 10%;
+   --surface1-light: 210 2% 90%;
+
+   /* DARK MODE */
+   --brand-dark: 40 100% 50%;
+   --text1-dark: 210 2% 90%;
+   --surface1-dark: 210 20% 10%;
+   /* COLOR MODE PREFERENCE: */
+   color-scheme: light;
+}
+@media only screen and (prefers-color-scheme: light) {
+   :root {
+      --brand: var(--brand-light);
+      --text1: var(--text1-light);
+      --surface1: var(--surface1-light);
+   }
+}
+@media only screen and (prefers-color-scheme: dark) {
+   :root {
+      --brand: var(--brand-dark);
+      --text1: var(--text1-dark);
+      --surface1: var(--surface1-dark);
+   }
+}
